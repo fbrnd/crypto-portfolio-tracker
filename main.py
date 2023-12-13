@@ -104,7 +104,7 @@ def view_portfolio(connection):
         row.extend([
             name, 
             "{0:.4f}".format(quantity), 
-            "{0:.2f}".format(price), 
+            "{0:.4f}".format(price), 
             "{0:.2f}".format(value),
             "{0:.1f}".format(percent),
         ]) 
@@ -223,7 +223,7 @@ def delete_coin(connection):
 def quit(message):
     clear_screen()
     time_elasped = 0
-    seconds = 2
+    seconds = 3
 
     while time_elasped < seconds:
         time.sleep(1)
